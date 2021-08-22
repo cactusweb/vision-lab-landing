@@ -1,0 +1,43 @@
+$tab-size: 780px;
+
+.main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    @media screen and ( min-width: $tab-size+1 ) {
+        background-image: url('/assets/img/bg/header-bg-fp.svg');
+    }
+
+    background-position: top right;
+    background-size: contain;
+
+    padding: 40px 0px;
+    @media screen and ( max-width: $tab-size ) {
+        padding: 20px 0px;
+        row-gap: 65px;
+        background-image: url('/assets/img/bg/header-bg-mob.svg');
+    }
+}
+
+
+main{
+    margin-top: 100px;
+    display: grid;
+    row-gap: 120px;
+}
+
+app-footer{
+    margin-top: 200px;
+}
+
+
+app-features-mobile{
+    @media screen and ( min-width: $tab-size+1 ) {
+        display: none;
+    }
+}
+app-features{
+    @media screen and ( max-width: $tab-size ) {
+        display: none;
+    }
+}

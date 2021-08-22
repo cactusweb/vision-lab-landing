@@ -1,0 +1,36 @@
+<section id="features">
+    <h2>Features.</h2>
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="card-halfcircle" [class.active]="currentBlockId == 1" (mouseenter)="currentBlockId = 1">
+                <img src="/assets/img/features-icons/link.png" alt="">
+                <span>Custom <br> Monitors</span>
+            </div>
+            <div class="card-halfcircle" [class.active]="currentBlockId == 2" (mouseenter)="currentBlockId = 2">
+                <img src="/assets/img/features-icons/hand.png" alt="">
+                <span>One-On-One <br> Support</span>
+            </div>
+            <div class="card-halfcircle" [class.active]="currentBlockId == 3" (mouseenter)="currentBlockId = 3">
+                <img src="/assets/img/features-icons/file.png" alt="">
+                <span> Release <br> Guides </span>
+            </div>
+            <div class="card-halfcircle" [class.active]="currentBlockId == 4" (mouseenter)="currentBlockId = 4">
+                <img src="/assets/img/features-icons/ul.png" alt="">
+                <span>Legit <br> Checks</span>
+            </div>
+        </div>
+        <div class="info"
+            [style.borderRadius]="
+                currentBlockId == 1 ? '0px 16px 16px 16px' 
+                :
+                currentBlockId == 4 ? '16px 0px 16px 16px' : '16px 16px 16px 16px'
+            "
+        >
+            <p [class.active]="currentBlockId == 1">Наша команда программистов предоставляет всем юзерам собственные быстрейшие мониторы на EU и RU сайты.</p>
+            <p [class.active]="currentBlockId == 2">Мы всегда готовы оказать вам индивидуальную поддержку практически по любому вопросу, будь то помощь с настройкой софта или совет по реализации вашей пары.</p>
+            <p [class.active]="currentBlockId == 3">К каждому релизу мы проводим подробный анализ и делимся с пользователями всей необходимой информацией, тем самым значительно увеличивая шансы на успешную покупку.</p>
+            <p [class.active]="currentBlockId == 4">В нашей команде так же присутствуют профессиональные легитчекеры, которые помогут вам убедиться в оригинальности какой-либо вещи.</p>
+        </div>
+    </div>
+</section>

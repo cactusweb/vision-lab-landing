@@ -1,0 +1,33 @@
+$tab-size: 780px;
+
+header{
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    row-gap: 40px;
+    @media screen and ( max-width: $tab-size ) {
+        row-gap: 32px;
+        align-content: start;
+    }
+    height: 100%;
+}
+
+h1{
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 90%;
+    @media screen and ( max-width: $tab-size ) {
+        font-size: 72px;
+    }
+}
+
+.btn{
+    height: 48px;
+    width: 152px;
+    border-radius: 40px;
+    background:linear-gradient(98deg, rgba(121, 97, 213, .6) 14%, rgba(60, 168, 252, .4) 78%);
+    @media screen and ( max-width: $tab-size ) {
+        height: 42px;
+        width: 127px;
+    }
+}

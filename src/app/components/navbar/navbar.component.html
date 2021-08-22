@@ -1,0 +1,12 @@
+<nav class="row">
+    <img src="/assets/logo.png" alt="" routerLink="/">
+
+    <ul class="row" [class.hide]="!displayUl">
+        <li> <a (click)="scrollTo('features', $event)">Features</a> </li>
+        <li> <a (click)="scrollTo('faq', $event)">F.A.Q.</a> </li>
+        <li> <a (click)="scrollTo('contacts', $event)">Contacts</a> </li>
+    </ul>
+
+    <a href="https://dash.visionlabcook.com" class="btn">Dashboard</a>
+
+</nav>

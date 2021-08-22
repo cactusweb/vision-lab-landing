@@ -1,0 +1,39 @@
+.wrapper{
+    display: grid;
+    row-gap: 16px;
+}
+
+.card{
+    display: grid;
+    row-gap: 16px;
+    padding: 24px 16px;
+    border-radius: 16px;
+    background:linear-gradient(98deg, rgba(121, 97, 213, .6) 14%, rgba(60, 168, 252, .4) 78%);
+    backdrop-filter: blur(24px);
+}
+
+.title{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    row-gap: 8px;
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 110%;
+}
